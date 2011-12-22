@@ -47,7 +47,10 @@ $(function() {
 
     addSwipeListener($('body')[0], function(e) {doSwipe(e);});
 
-    renderSnow();
+    // Enable snow on desktop, but it's too slow for iPhone/iPad
+    if( screen.width > 1024 ) {
+        renderSnow();
+    }
 
 });
 
@@ -344,7 +347,7 @@ function renderSnow() {
 		renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
 		var material = new THREE.ParticleBasicMaterial( { map: new THREE.Texture(particleImage) } );
     
-		for (var i = 0; i < 250; i++) {
+		for (var i = 0; i < 100; i++) {
         
 				particle = new Particle3D( material);
 				particle.position.x = Math.random() * 2000 - 1000;
