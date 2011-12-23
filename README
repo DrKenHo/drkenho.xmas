@@ -5,9 +5,9 @@ The last couple of years I have made Christmas cards for my colleagues at the Te
 
 * BROWSER SUPPORT
 
-Unfortunately it's only currently supported in Chrome and Safari (i.e. Webkit) because only Webkit has support for CSS3 3D transforms right now. Firefox should get support in the near future (as of the time of writing).
+Unfortunately it's only currently supported in Chrome and Safari (i.e. Webkit) because, as of the time of writing, only Webkit has support for CSS3 3D transforms right now. Firefox should get support in the near future, so I hope to support it for 2012's card!
 
-It kind of works in iOS Safari (iPhone, iPad), but there's unfortunately a delay in switching from the card opening from 0 to 90 degress, and then from 90 to 180 degrees. I'll see if I can fix that shortly.
+It kind of works in iOS Safari (iPhone, iPad). It's best to add it to your home screen and load as a full-screen app. Unfortunately, there's an annoyingly long delay in switching from the card opening from 0 to 90 degress, and then from 90 to 180 degrees. Even worse, it now seems to popup with the message 'The operation could not be completed'. Not through the simulator, but on my real iPad... anyone have any ideas why?
 
 
 * SOURCE CODE
