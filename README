@@ -1,6 +1,16 @@
 *** MERRY CHRISTMAS FROM PETER ***
 
-The last couple of years I have made Christmas cards for my colleagues at the Telegraph and Pearson.
+The last couple of years I have made Christmas cards for my colleagues at the Telegraph and Pearson. This is the README specifically for the 2011 version for Pearson.
+
+
+* BROWSER SUPPORT
+
+Unfortunately it's only currently supported in Chrome and Safari (i.e. Webkit) because only Webkit has support for CSS3 3D transforms right now. Firefox should get support in the near future (as of the time of writing).
+
+It kind of works in iOS Safari (iPhone, iPad), but there's unfortunately a delay in switching from the card opening from 0 to 90 degress, and then from 90 to 180 degrees. I'll see if I can fix that shortly.
+
+
+* SOURCE CODE
 
 Everything is available in GitHub:
 

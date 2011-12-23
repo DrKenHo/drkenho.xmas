@@ -12,7 +12,7 @@ body {
     height:100%;
     font-size: 80%;
     -webkit-transform-style: preserve-3d;
-    -webkit-perspective: 1000;
+    -webkit-perspective: 1600;
     -webkit-transform: translateZ(30px);
 }
 
@@ -142,6 +142,11 @@ section {
 #secondinnerpage .signature {
     font-family: Tangerine, serif;
     font-size: 2em;
+}
+
+#secondinnerpage .about {
+    font-size: 1.2em;
+    margin-top: 60px;
 }
 
 #secondinnerpage footer p {
