@@ -238,13 +238,13 @@ function openCard() {
 
 	      // Animation half way there, now need to animate the second half
 
-        $('#firstinnerpage').css('display','block');
-        $('#frontpage').css('display','none');
+        $('#firstinnerpage').css({
+            'opacity': '1',
+            '-webkit-transition': '-webkit-transform 1s ease-out',
+            '-webkit-transform': 'rotateX(5deg) rotateY(-180deg)'
+        });
 
-        // For some reason, without the timeout the animation happens instantly
-        window.setTimeout(function() {
-            $('#firstinnerpage').css('-webkit-transition', '-webkit-transform 1s ease-out').css('-webkit-transform', 'rotateX(5deg) rotateY(-180deg)');
-        }, 0);
+        $('#frontpage').css('opacity','0');
 
         this.removeEventListener('webkitTransitionEnd', arguments.callee, false);
 
@@ -277,13 +277,12 @@ function closeCard() {
 
 	      // Animation half way there, now need to animate the second half
 
-        $(this).css('display','none');
-        $('#frontpage').css('display','block');
-
-        // For some reason, without the timeout the animation happens instantly
-        window.setTimeout(function() {
-            $('#frontpage').css('-webkit-transition', '-webkit-transform 1s ease-out').css('-webkit-transform', 'rotateX(5deg) rotateY(0deg)');
-        }, 0);
+        $(this).css('opacity','0');
+        $('#frontpage').css({
+            'opacity': '1',
+            '-webkit-transition': '-webkit-transform 1s ease-out',
+            '-webkit-transform': 'rotateX(5deg) rotateY(0deg)'
+        });
 
         this.removeEventListener('webkitTransitionEnd', arguments.callee, false);
 
