@@ -238,13 +238,8 @@ function openCard() {
 
 	      // Animation half way there, now need to animate the second half
 
-        $('#firstinnerpage').css({
-            //'opacity': '1',
-            '-webkit-transition': '-webkit-transform 1s ease-out',
-            '-webkit-transform': 'rotateX(5deg) rotateY(-180deg)'
-        });
-
-        //$('#frontpage').css('opacity','0');
+        $('#firstinnerpage').css('opacity',1).css('-webkit-transition', '-webkit-transform 1s ease-out').css('-webkit-transform', 'rotateX(5deg) rotateY(-180deg)');
+        $('#frontpage').css('opacity',0);
 
         this.removeEventListener('webkitTransitionEnd', arguments.callee, false);
 
@@ -264,9 +259,6 @@ function openCard() {
     
 	  playMusic();
 
-    // Experiment to see if I can get something working on Firefox
-    //$('#frontpage').css('-moz-transform','translateY(-180deg)');
-    
 }
 
 function closeCard() {
@@ -277,12 +269,8 @@ function closeCard() {
 
 	      // Animation half way there, now need to animate the second half
 
-        //$(this).css('opacity','0');
-        $('#frontpage').css({
-            //'opacity': '1',
-            '-webkit-transition': '-webkit-transform 1s ease-out',
-            '-webkit-transform': 'rotateX(5deg) rotateY(0deg)'
-        });
+        $('#frontpage').css('opacity',1).css('-webkit-transition', '-webkit-transform 1s ease-out').css('-webkit-transform', 'rotateX(5deg) rotateY(0deg)');
+        $(this).css('opacity',0);
 
         this.removeEventListener('webkitTransitionEnd', arguments.callee, false);
 
@@ -293,6 +281,8 @@ function closeCard() {
 	      // Animation complete
 
 	      $('#card').data('open','false');
+
+        this.removeEventListener('webkitTransitionEnd', arguments.callee, false);
 
     }, false);
     

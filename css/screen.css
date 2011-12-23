@@ -165,5 +165,6 @@ section {
 
 /* Changes for tablets (iPad) */
 @media screen and (max-width:1024px) {
-    #card {top: 15px;}   
+    #card {top: 5%;}   
 }
+
