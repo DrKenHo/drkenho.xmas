@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <!--
-  Peter O'Shaughnessy
-  December 2011.
-  Please email me with any queries: peter.oshaughnessy@gmail.com
+  Ken Ho
+  based on https://github.com/poshaughnessy/christmascard2011
 -->
 <!-- manifest="cache.manifest" -->
 <html>
@@ -12,7 +11,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
 
     <title>Merry Xmas!</title>
-    <link href="css/screen.css" rel="stylesheet" type="text/css"/>
+    <link href="css/screen.css" rel="stylesheet" type="text/cjss"/>
     <link href="http://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css"/>
     <link rel="apple-touch-icon" href="images/ios-home-icon.png"/>
 
@@ -30,13 +29,12 @@
       <section id="frontpage">
 	
 	      <p class="logointro">A Christmas card for...</p>
-	      <img src="images/pearson.png" alt="Pearson"/>
+	      <p class="logointro"><b>you</b><p>
 	      
 	      <canvas id="tree" width="300" height="300"></canvas>
 
         <ul class="instructions">
 	        <li>For the latest versions of Chrome or Safari</li>
-	      
 	        <li>Open by clicking, swiping, or pressing <span class="arrow">→</span></li>
         </ul>
 	      
@@ -47,10 +45,12 @@
       
       <section id="secondinnerpage">
 	      
-	      <p class="deartelegraph">Dear Pearson colleagues,</p>
+	      <p class="deartelegraph">Dear old friends</p>
 	      
-	      <h3>Wishing you a very happy holiday<br/>
-          and a joyful new year</h3>
+	      <h3>Wishing you a Merry Christmas<br>
+          and a healthy & prosperous New Year<br>
+
+	</h3>
 	      
         <div class="audiocontrols">
           <audio id="song" preload="auto" autobuffer="autobuffer" loop="loop">
@@ -62,10 +62,8 @@
           <div class="label">Music controls</div>
         </div>
 	      
-	      <p>From <span class="signature">Peter O'Shaughnessy</span></p>
+	      <p>From <span class="signature">Ken & family</span></p>
 	      
-        <p class="about"><a href="https://github.com/poshaughnessy/christmascard2011">Info & Credits</a></p>
-
       </section>
 
     </div>
