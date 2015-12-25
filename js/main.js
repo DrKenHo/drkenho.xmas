@@ -312,7 +312,7 @@ var windowHalfY = window.innerHeight / 2;
 
 var particles = []; 
 var particleImage = new Image();
-particleImage.src = 'images/ParticleSmoke.png'; 
+particleImage.src = '../images/ParticleSmoke.png'; 
 
 
 function renderSnow() {
